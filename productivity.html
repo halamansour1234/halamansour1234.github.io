@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+<link rel="stylesheet" src="css3/style.css" type="text/css" href="css3/style.css" >
+<title> Quarantine Boredom </title>
+</head>
+<body>
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" href="aboutus.html">About Us</a> </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+     
+      </div>
+    </div>
+  </nav>
+
+
+  <button class="accordion"> Learn a new language </button>
+<div class="panel">
+    <p> 
+        Learning a new language is very important and beneficial and here are a few reasons why  
+       <ul>
+       <li>Improves your memory.</li>
+       <li>Being bilingual makes you a better multitasker.</li> 
+       <li>Knowing other languages encourages cultural appreciation.</li> 
+       <li>Speaking other languages makes you a better communicator.</li>  
+   </ul>
+   Apps such as dualingo are very helpful for anyone looking to learn a new language !
+   </p>
+</div>
+
+<button class="accordion"> Get a planner </button>
+<div class="panel">
+  <p> Getting a planner is the first step to becoming a productive person. Planning out your day means that you have organised your tasks and that you know exactly what you need to get done for the day, so that you can cheack off your tasks one by one and make sure that you have gotten everything done. </p>
+<br>
+<img src = "img/planner.jpg" height='200' width= '200'> 
+</div>
+
+<button class="accordion"> Clean around the house </button>
+<div class="panel">
+  <p>This might seem like a boring task to some but actually, you can make it very interesting! Play some music and have fun it. While at the same time getting your chores done</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
